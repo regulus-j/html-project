@@ -1,0 +1,48 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+.nav-bar {
+  /*Horizontal Navigation Bar Module*/
+  background-color: gainsboro;
+  width: 100vw;
+  position: fixed;
+}
+
+  .nav-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-head{
+    display: block;
+    text-decoration: none;
+    background-color: gainsboro;
+    padding: 6px;
+    size: 500px;
+    font-family: bahnschrift;
+  }
+
+  .nav-item a{
+    display: block;
+    padding: 6px;
+
+    /*TEXT STYLE*/
+    color: black;
+    text-decoration: none;
+
+  }
+
+  /*Navigation Item Behavior*/
+  .nav-item:hover{
+    background-color: rgb(185, 185, 185);
+  }
