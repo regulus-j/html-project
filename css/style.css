@@ -2,7 +2,15 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: Consolas, sans-serif;
 }
+
+    /*COLOR Pallete
+    #5F5D9C
+    #6196A6
+    #A4CE95
+    #F4EDCC
+    */
 
 body {
   display: grid;
@@ -10,39 +18,104 @@ body {
   grid-template-rows: auto;
 }
 
+header{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+#home-banner-img{
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
 .nav-bar {
   /*Horizontal Navigation Bar Module*/
+  /*sizing*/
+  width: auto;
+  height: auto;
+
+  /*Positioning & Layout*/
+  top: 0;
+  z-index: 100;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
   background-color: gainsboro;
-  width: 100vw;
-  position: fixed;
+  box-shadow: 1px 1px 10px;
 }
 
   .nav-list{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    margin: 0px;
+    align-items: center;
   }
 
-  .nav-head{
-    display: block;
+  .nav-head {
     text-decoration: none;
-    background-color: gainsboro;
-    padding: 6px;
-    size: 500px;
-    font-family: bahnschrift;
+    margin-right: 18px;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: auto;
+    width: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #5F5D9C;
+    color: #F4EDCC;
   }
 
   .nav-item a{
-    display: block;
     padding: 6px;
 
     /*TEXT STYLE*/
-    color: black;
+    color: #5F5D9C;
     text-decoration: none;
+  }
 
+  #active-nav{
+    background-color: #5f5d9c8a;
+    text-decoration: solid;
+  }
+
+  #login-button{
+    padding-left: 8px;
+    padding-right: 8px;
+    height: auto;
+    width: auto;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*TEXT STYLE*/
+    background-color: #5F5D9C;
+    font-size: small;
+  }
+
+  #login-button a{
+    color: #F4EDCC;
+    text-decoration: none;
+  }
+
+  #login-button:hover{
+    background-color: #5F5D9C;
   }
 
   /*Navigation Item Behavior*/
   .nav-item:hover{
     background-color: rgb(185, 185, 185);
+  }
+
+  main{
+    width: auto;
+    height: 100vh;
   }
