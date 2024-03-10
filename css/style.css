@@ -12,16 +12,12 @@
     #F4EDCC
     */
 
-body {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-}
-
 header{
   position: sticky;
   top: 0;
   z-index: 100;
+
+  min-height: 50px;
 }
 
 #home-banner-img{
@@ -29,11 +25,13 @@ header{
   height: 30vh;
   object-fit: cover;
 }
+
 .nav-bar {
   /*Horizontal Navigation Bar Module*/
   /*sizing*/
   width: auto;
   height: auto;
+  min-height: 50px;
 
   /*Positioning & Layout*/
   top: 0;
@@ -80,9 +78,9 @@ header{
     text-decoration: none;
   }
 
-  #active-nav{
-    background-color: #5f5d9c8a;
-    text-decoration: solid;
+  #active-nav a{
+    color: white;
+    text-shadow: 1px 1px 10px #000000;
   }
 
   #login-button{
@@ -118,4 +116,41 @@ header{
   main{
     width: auto;
     height: 100vh;
+  }
+
+  .box {
+    background-color: lightblue;
+    border: 1px solid blue;
+    min-height: 50px;
+    font-size: 2rem;
+  }
+  
+  @media (min-width: 576px) {
+    body::before {
+      content: "SM";
+    }
+  }
+  
+  @media (min-width: 768px) {
+    body::before {
+      content: "MD";
+    }
+  }
+  
+  @media (min-width: 992px) {
+    body::before {
+      content: "LG";
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    body::before {
+      content: "XL";
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    body::before {
+      content: "XXL";
+    }
   }
