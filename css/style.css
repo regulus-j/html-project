@@ -5,118 +5,12 @@
   font-family: Consolas, sans-serif;
 }
 
-    /*COLOR Pallete
-    #5F5D9C
-    #6196A6
-    #A4CE95
-    #F4EDCC
-    */
-
-header{
-  position: sticky;
-  top: 0;
-  z-index: 100;
-
-  min-height: 50px;
-}
-
-#home-banner-img{
-  width: 100%;
-  height: 30vh;
-  object-fit: cover;
-}
-
-.nav-bar {
-  /*Horizontal Navigation Bar Module*/
-  /*sizing*/
-  width: auto;
-  height: auto;
-  min-height: 50px;
-
-  /*Positioning & Layout*/
-  top: 0;
-  z-index: 100;
-  position: sticky;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-  background-color: gainsboro;
-  box-shadow: 1px 1px 10px;
-}
-
-  .nav-list{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 0px;
-    align-items: center;
-  }
-
-  .nav-head {
-    text-decoration: none;
-    margin-right: 18px;
-    padding-left: 8px;
-    padding-right: 8px;
-    height: auto;
-    width: auto;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: #5F5D9C;
-    color: #F4EDCC;
-  }
-
-  .nav-item a{
-    padding: 6px;
-
-    /*TEXT STYLE*/
-    color: #5F5D9C;
-    text-decoration: none;
-  }
-
-  #active-nav a{
-    color: white;
-    text-shadow: 1px 1px 10px #000000;
-  }
-
-  #login-button{
-    padding-left: 8px;
-    padding-right: 8px;
-    height: auto;
-    width: auto;
-    border-radius: 5px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /*TEXT STYLE*/
-    background-color: #5F5D9C;
-    font-size: small;
-  }
-
-  #login-button a{
-    color: #F4EDCC;
-    text-decoration: none;
-  }
-
-  #login-button:hover{
-    background-color: #5F5D9C;
-  }
-
-  /*Navigation Item Behavior*/
-  .nav-item:hover{
-    background-color: rgb(185, 185, 185);
-  }
-
-  main{
-    width: auto;
-    height: 100vh;
-  }
+  /*COLOR Pallete
+  #5F5D9C
+  #6196A6
+  #A4CE95
+  #F4EDCC
+  */
 
   .box {
     background-color: lightblue;
@@ -125,6 +19,12 @@ header{
     font-size: 2rem;
   }
   
+  @media (min-width: 0px) {
+    body::before {
+      content: "???";
+    }
+  }
+
   @media (min-width: 576px) {
     body::before {
       content: "SM";
